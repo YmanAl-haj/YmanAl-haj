@@ -1,0 +1,586 @@
+a{text-decoration:none;color:#fff;}
+a:visited{color:#fff; text-decoration:none;}
+a:hover{ text-decoration:none;}
+ul{list-style: none;}
+.head{
+	width:100%;
+}
+.head ul {
+    padding: 0px;
+    margin: 0;
+}
+.head-full {
+    background-color: #003b4d;
+   * border-radius: 15px 0;
+    overflow: hidden;
+    padding:5px;
+}
+.head-left > ul > li {
+    display: inline-block;
+    padding: 10px;
+}
+.head-left > ul > li > a{
+    transition:all 1s;
+}
+.head-left > ul > li > a:hover{
+    color:#ff9933;
+	text-decoration:none;
+}
+.head-left{
+	float:left;
+	width:80%;
+}
+.head-right{
+	float:left;
+	width:20%;
+}
+.head-right h2{
+	color:#fff;
+	display:inline;
+	font-family:Lucida Calligraphy;
+}
+.head-right span{
+	color:#ff9933;
+}
+/*sub menu*/
+.sub {
+    position: absolute;
+    visibility: hidden;
+    z-index: 9;
+    display: table;
+    transition: all 0.5s linear;
+    top: 3em;
+    margin-top: 10px;
+	border-radius:5px;
+}
+.sub_left {
+    float: left;
+    padding: 10px;
+}
+.sub_left strong {
+    font-weight: 600;
+    color: #003b4d;
+}
+.sub_left ul li a {
+    color: #777777;
+    display: block;
+    font-size: 12px;
+    line-height: 34px;
+    text-transform: Capitalize;
+    padding: 0 20px;
+}
+.sub_left ul li a:hover{
+	color: #ff873b;
+	background:#eee;
+	border-radius:15px 0;
+}
+.sub_left +.sub_left {
+    border-left: 1px solid #e9e9e9;
+}
+.head-left > ul > li:hover .sub{
+	visibility:visible;
+	top:2.8em;
+	background:#fff;
+}
+/*end of sub menu*/
+.slider{
+	background: linear-gradient(to bottom right, #ff9933 0%, #ff5050 100%);
+	width:100%;
+	height:300px;
+}
+.slider h4{
+	display:inline;
+	font-family:Lucida Calligraphy,Script MT Bold;
+	color:#fff;
+}
+.top i{
+	color:#000;
+}
+.top{
+	width: 100%;
+    text-align: center;
+    padding: 20px 0px
+}
+.Bottom{
+	width: 70%;
+    margin: auto;
+    background: #fff;
+    height: 280px;
+}
+.slider span {
+	font-size: 40px;
+    position: absolute;
+    top: 50%;
+	color:#fff;
+}
+.slider::after {
+  content: "";
+  float:left;
+  display: table;
+}
+.main{
+	width:100%;
+	margin-top: 20px;
+}
+.main-center{
+	width: 70%;
+    margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.product-parent{
+	flex: 1;
+    margin-left: 5px;
+}
+.product-parent a b{
+	color:#929090;
+}
+.product-parent a:hover{
+	text-decoration:none;
+	color:#c7c2c2;
+}
+.product-parent a{
+	color:#ff9933;
+}
+/*Product Page*/
+
+#pro-price{
+	color: #ff7542;
+	font-weight: bold;
+}
+.button{
+  display: inline-block;
+  border-radius: 4px;
+  background-color:#ff7b3f;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+ }
+.button:hover{
+  background-color: #f4511e;
+  border: none;;
+ }
+.search{
+    width: 25%;
+    margin: auto;
+}
+.search input{border-radius:5px 20px;}
+#search_btn{    
+	background: none;
+    width: 20px;
+    display: inline-block;
+	cursor:pointer;
+	z-index:8;
+	height:37px;
+	position: absolute;
+	left:57%
+}
+#search_btn i{    
+	font-size: 20px;
+    color: #ff7b3e;
+}
+/*end of page*/
+/*Cart Page*/
+.w3-container, .w3-panel {
+    width: 100%;
+	margin-top: 20px;
+}
+#cart-head{
+	text-shadow: 2px 2px 4px #929798;
+	color: #003b4d;
+}
+
+.price-details  {
+    width: 30%;
+    margin: auto;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+.price-details h3 {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+.price-details span {
+    width: 50%;
+    float: left;
+    padding: 1px 0;
+}
+.cart-top{
+	width: 100%;
+    display: flex;
+	overflow:auto;
+}
+.cart-left{
+	width: 70%;
+}
+.cart-right{
+	width: 30%;
+	text-align: right;
+}
+.cart-right a{
+    color: #ff7343;
+	transition:all 0.5s;
+}
+.cart-right a:hover{
+    color: #ff584c;
+	text-decoration:underline;
+}
+.message{
+	width:100%;
+	text-align: center;
+    margin-top: 10px;
+}
+.message p{
+	color: red;
+    font-weight: bold;
+}
+span.total {
+    width: 50%;
+    float: left;
+}
+span.final {
+    font-weight: 600;
+    padding-top: 6px;
+    font-size: 1.3em;
+}
+h4.last-price {
+    color: #000;
+    font-size: 1.3em;
+    font-weight: 600;
+    width: 50%;
+    float: left;
+}
+
+.sure-left{
+	width:50%;
+	float:left;
+}
+.order {
+    background: #333;
+    padding: 10px 1.5em;
+    border-radius: 7px;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+	width: 60%;
+	transition:all 1s;
+	float: left;
+	margin: 0px;
+	border:none;
+}
+.order:hover{ background: #026466;}
+.continu {
+    background: #026466;
+    padding: 10px 1.5em;
+    border-radius: 7px;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+	width: 60%;
+	transition:all 1s;
+	float: right;
+}
+.continu:hover{ background: #333;}
+/*Admin page*/
+.grid-container {
+    display: grid;
+    grid-column-gap: 70px;
+    grid-template-columns: 220px auto auto auto auto;
+    padding:10px;
+}
+.grid-item {line-height:8;}
+.grid-item  button{
+	line-height: 2;
+    width: 90px;
+	margin-top: 25px;
+}
+.grid-item  h4{
+	padding:0;
+	margin:0;
+	line-height:6;
+}
+/*End of Admin page*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/*End of Cart Page*/
+/*start of login*/
+
+.box p{
+   font-size:12px;
+   text-decoration: none;
+   margin-top:20px;
+}
+
+.boxh1{
+   font-size:1.5em;
+   color:#525252;
+}
+.box{
+   background:white;
+   width:50%;
+   border-radius:6px;
+   margin: auto;
+   padding:10px;
+   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+   text-align:center;
+}
+
+.email{
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 10px;
+  width:100%;
+  color:#AAAAAA;
+  margin-top:10px;
+  font-size:1em;
+  border-radius:4px;
+}
+
+.password{
+  border-radius:4px;
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  padding: 8px;
+  width:250px;
+  font-size:1em;
+}
+#btn{
+	width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*end of login*/
+.img-thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.img-thumbnail:hover{
+    box-shadow: 0 0 2px 1px #e6e6e6;
+    border-radius: 4px;
+}
+.footer-top{
+    width: 100%;
+	display:inline-block;
+}
+.footer{
+    width: 100%;
+    background-color: #003b4d;
+	overflow:hidden;
+	margin-top: 10px;
+}
+.footer_left {  
+	width:25%;
+	float:left;
+}
+.footer_left h5{  
+	font-size: 1.6em;
+    color: #fff;
+    font-weight: bold;
+	text-align:center;
+}
+.footer_left ul li a,ul li{  
+    color: #8aadbf;
+}
+.footer_left ul li a:hover{  
+    color: #Fff;
+	text-decoration:none;
+}
+.hr{
+	margin: auto;
+    border-bottom: 2px solid #fff;
+    width: 94%;
+}
+.footer-bootom{
+	width:90%;
+	margin:auto;
+	margin-top:5px;
+}
+.footer-left-icon{
+	width: 80%;
+    float: left;
+    text-align: right;
+}
+.footer-left-icon i{
+	color:#8aadbf;
+	transition:all 1s;
+}
+.footer-left-icon i:hover{
+	color:#fff;
+}
+.footer-left-icon p{
+	color:#fff;
+	text-align:center;
+}
+
+@media only screen and (max-width: 800px) {
+ .product-parent{
+	flex-basis: 180px;
+	margin-top:5px;
+}
+}
+@media only screen and (max-width: 500px) {
+ .product-parent{
+	flex-basis: 100%;
+	margin-top:5px;
+}
+}
+@media only screen and (max-width: 800px) {
+ .product-parent{
+	flex-basis: 180px;
+	margin-top:5px;
+}
+}
+@media only screen and (max-width: 800px) {
+.footer_left{
+	width:50%;
+}
+}
+@media only screen and (max-width: 700px) {
+.footer-left-icon p{
+	margin-top: 25px;
+}
+}@media only screen and (max-width: 600px) {
+.head-right{
+	display:none;
+}
+}
+
+
