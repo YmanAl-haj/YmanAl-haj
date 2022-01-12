@@ -5,6 +5,7 @@ if pe.isdigit():
     if pe < 10:
         while pe < 10:
             name=input("Please enter name {}: ".format(count))
+            print(name)
             count+=1
             if count == pe :
                 break
